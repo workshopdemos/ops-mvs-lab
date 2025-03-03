@@ -4,16 +4,13 @@
         "zosmf": {
             "type": "zosmf",
             "properties": {
-                "port": 1443
-            },
-            "default": {
-                "port": 1443
+                "port": 10443
             }
         },
         "tso": {
             "type": "tso",
             "properties": {
-                "account": "USER02",
+                "account": "",
                 "codePage": "1047",
                 "logonProcedure": "IZUFPROC"
             }
@@ -21,10 +18,10 @@
         "ssh": {
             "type": "ssh",
             "properties": {
-                "port": 22
+                "port": 2022
             }
         },
-        "project_base": {
+        "base": {
             "type": "base",
             "properties": {
                 "host": "10.252.118.131",
@@ -48,7 +45,7 @@
         "tso": "tso",
         "ssh": "ssh",
         "opsrest": "ops",
-        "base": "project_base"
+        "base": "base"
     },
     "autoStore": true
 }
