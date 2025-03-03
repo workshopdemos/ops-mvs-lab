@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@broadcom/ops-for-zowe-cli": "^5.2.0",
+    "@zowe/cli": "^8.14.0"
+  }
+}

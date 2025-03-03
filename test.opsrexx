@@ -1,0 +1,19 @@
+)MSG TSS7099E
+)INIT
+/* -------------------------------------------------------------------- */
+/* The following code is executed each time the rule is enabled.        */
+/* -------------------------------------------------------------------- */
+  say 'Rule enabled'
+)PROC
+/* -------------------------------------------------------------------- */
+/* The following code is executed each time the rule is fired.          */
+/* -------------------------------------------------------------------- */
+  say 'Invalid credentials:'
+  say ' 'msg.text
+  say ' 'msg.jobname
+)TERM
+/* -------------------------------------------------------------------- */
+/* The following code is only executed when the rule is disabled.       */
+/* -------------------------------------------------------------------- */
+  say 'Rule disabled'
+)END
