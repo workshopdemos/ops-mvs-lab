@@ -4,7 +4,7 @@
         "zosmf": {
             "type": "zosmf",
             "properties": {
-                "port": 10443
+                "port": 1443
             }
         },
         "tso": {
@@ -25,18 +25,24 @@
             "type": "base",
             "properties": {
                 "host": "10.252.118.131",
+                // "host": "r100.msd.labs.broadcom.net",
+                // "host": "R22P.msd.labs.broadcom.net",
                 "user": "USER02",
                 "password": "OPSUSER",
-                "rejectUnauthorized": false
+                "rejectUnauthorized": false,
+                // "port": 50080,
+                // "rest-api": true,
+                // "protocol": "https"
             }
         },
         "opsrest": {
             "type": "ops",
             "properties": {
-                "port": 123,
+                "port": 50080,
                 "rest-api": true,
                 "reject-unauthorized": false,
-                "subsystem": "OPSS"
+                "subsystem": "OPSS",
+                "protocol": "https"
             }
         }
     },

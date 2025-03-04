@@ -1,6 +1,8 @@
 # ops-mvs-lab
 This repo is for ops mvs lab
 
+curl -X 'GET' 'https://10.252.118.132:50080/api/v1/status' -H 'accept: application/json' -H 'X-Requested-With: XMLHttpRequest'
+
 
 Changelog:
   - 3/3/2025:
@@ -8,3 +10,7 @@ Changelog:
     - tried setting up z/OSMF connection 
     - zowe secure cred store on linux is different (https://docs.zowe.org/stable/user-guide/systemrequirements-cli/)
 
+  -3/4/2025:
+    - updated config with host
+    - got OPSREST started and pinged via VS Code
+    
