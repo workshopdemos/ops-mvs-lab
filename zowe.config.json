@@ -4,6 +4,8 @@
         "zosmf": {
             "type": "zosmf",
             "properties": {
+                "user": "PROD001",
+                "password": "opslab1",
                 "port": 1443
             }
         },
@@ -24,15 +26,12 @@
         "base": {
             "type": "base",
             "properties": {
-                "host": "10.252.118.131",
+                "host": "10.252.118.132",
                 // "host": "r100.msd.labs.broadcom.net",
                 // "host": "R22P.msd.labs.broadcom.net",
-                "user": "USER02",
-                "password": "OPSUSER",
-                "rejectUnauthorized": false,
-                // "port": 50080,
-                // "rest-api": true,
-                // "protocol": "https"
+                "reject-unauthorized": false,
+                "user": "PROD001",
+                "password": "opslab1"
             }
         },
         "opsrest": {
@@ -40,17 +39,17 @@
             "properties": {
                 "port": 50080,
                 "rest-api": true,
-                "reject-unauthorized": false,
+                // "reject-unauthorized": false,
                 "subsystem": "OPSS",
                 "protocol": "https"
             }
         }
     },
     "defaults": {
-        "zosmf": "default",
+        "zosmf": "zosmf",
         "tso": "tso",
         "ssh": "ssh",
-        "opsrest": "ops",
+        "ops": "opsrest",
         "base": "base"
     },
     "autoStore": true
