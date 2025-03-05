@@ -39,7 +39,7 @@
             "properties": {
                 "port": 50080,
                 "rest-api": true,
-                // "reject-unauthorized": false,
+                "reject-unauthorized": false,
                 "subsystem": "OPSS",
                 "protocol": "https"
             }

@@ -22,4 +22,8 @@ Changelog:
     - some datasets to use:
       - CA1.OPSMVS.MSG.RULES | CA1.OPSMVS.*.RULES
       - PROD001.OPS.REXX
+    - must uncheck the workspace credential checking or requests to go out  
+       - test with `zowe zosmf check status` command
+    - can create opsrexx data sets and run programs locally
+      - test with `PROD001.OPS.REXX(HELLO)`
     
