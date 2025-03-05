@@ -28,7 +28,7 @@
             "properties": {
                 "host": "10.252.118.132",
                 // "host": "r100.msd.labs.broadcom.net",
-                // "host": "R22P.msd.labs.broadcom.net",
+                // "host": "R22P.MSD.LABS.BROADCOM.NET",
                 "reject-unauthorized": false,
                 "user": "PROD001",
                 "password": "opslab1"

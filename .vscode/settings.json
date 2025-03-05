@@ -1,3 +1,4 @@
 {
-    "zowe.security.secureCredentialsEnabled": false
+    "zowe.security.secureCredentialsEnabled": false,
+    "zowe.automaticProfileValidation": false
 }
