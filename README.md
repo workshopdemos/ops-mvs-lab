@@ -13,4 +13,13 @@ Changelog:
   -3/4/2025:
     - updated config with host
     - got OPSREST started and pinged via VS Code
+  
+  -3/5/2025:
+    - z/OSMF works
+    - team config updated
+    - OPS VSCE commands work on ZE ds members
+    - z/OSMF on ZDT is super slow (hardly usable), comment on ticket to try to resolve
+    - some datasets to use:
+      - CA1.OPSMVS.MSG.RULES | CA1.OPSMVS.*.RULES
+      - PROD001.OPS.REXX
     
