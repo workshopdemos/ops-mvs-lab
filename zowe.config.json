@@ -4,8 +4,6 @@
         "zosmf": {
             "type": "zosmf",
             "properties": {
-                "user": "PROD001",
-                "password": "opslab1",
                 "port": 1443
             }
         },
@@ -27,12 +25,13 @@
             "type": "base",
             "properties": {
                 "host": "10.252.118.132",
-                // "host": "r100.msd.labs.broadcom.net",
-                // "host": "R22P.MSD.LABS.BROADCOM.NET",
+                  // "host": "r22p.msd.labs.broadcom.net",
                 "reject-unauthorized": false,
                 "user": "PROD001",
                 "password": "opslab1"
             }
+            // }, 
+            // "secure": ["user", "password"]
         },
         "opsrest": {
             "type": "ops",
