@@ -27,3 +27,13 @@ Changelog:
     - can create opsrexx data sets and run programs locally
       - test with `PROD001.OPS.REXX(HELLO)`
     
+
+Settings for secure cred override and file associations must be applied from home/developer/strong-ide/data/Machine/settings.json
+
+# OPS/MVS VS Code Extension
+
+Create and test a rule
+  - Create a new rule with zowe explorer:
+      - click on your ruleset, click create a new member, name it `userid`
+  - Once your new rule is saved to the DS, start writing code
+  - 

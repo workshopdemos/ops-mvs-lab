@@ -18,7 +18,17 @@
         "ssh": {
             "type": "ssh",
             "properties": {
-                "port": 2022
+                "host": "zos-ssh",
+                "port": 22,
+                "user": "developer",
+                "privateKey": "/opt/keys/ssh_key"
+            }
+        },
+        "zftp": {
+            "type": "zftp",
+            "properties": {
+                "port": 21,
+                "secureFtp": false
             }
         },
         "base": {
@@ -49,6 +59,7 @@
         "tso": "tso",
         "ssh": "ssh",
         "ops": "opsrest",
+        "zftp": "zftp",
         "base": "base"
     },
     "autoStore": true

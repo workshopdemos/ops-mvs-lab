@@ -20,6 +20,7 @@
                                 "tso",
                                 "ssh",
                                 "ops",
+                                "zftp",
                                 "base"
                             ]
                         },
@@ -327,6 +328,82 @@
                             "if": {
                                 "properties": {
                                     "type": {
+                                        "const": "zftp"
+                                    }
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "properties": {
+                                        "type": "object",
+                                        "title": "Configuration profile for z/OS FTP",
+                                        "description": "Configuration profile for z/OS FTP",
+                                        "properties": {
+                                            "host": {
+                                                "type": "string",
+                                                "description": "The hostname or IP address of the z/OS server to connect to."
+                                            },
+                                            "port": {
+                                                "type": "number",
+                                                "description": "The port of the z/OS FTP server.",
+                                                "default": 21
+                                            },
+                                            "user": {
+                                                "type": "string",
+                                                "description": "Username for authentication on z/OS"
+                                            },
+                                            "password": {
+                                                "type": "string",
+                                                "description": "Password to authenticate to FTP."
+                                            },
+                                            "secureFtp": {
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "description": "Set to true for both control and data connection encryption, 'control' for control connection encryption only, or 'implicit' for implicitly encrypted control connection (this mode is deprecated in modern times, but usually uses port 990). Note: Unfortunately, this plugin's functionality only works with FTP and FTPS, not 'SFTP' which is FTP over SSH.",
+                                                "default": true
+                                            },
+                                            "rejectUnauthorized": {
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "description": "Reject self-signed certificates. Only specify this if you are connecting to a secure FTP instance."
+                                            },
+                                            "servername": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "description": "Server name for the SNI (Server Name Indication) TLS extension. Only specify if you are connecting securely"
+                                            },
+                                            "connectionTimeout": {
+                                                "type": "number",
+                                                "description": "How long (in milliseconds) to wait for the control connection to be established.",
+                                                "default": 10000
+                                            },
+                                            "encoding": {
+                                                "type": "string",
+                                                "description": "The encoding for download and upload of z/OS data set."
+                                            }
+                                        }
+                                    },
+                                    "secure": {
+                                        "items": {
+                                            "enum": [
+                                                "user",
+                                                "password"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "type": {
                                         "const": "base"
                                     }
                                 }
@@ -412,6 +489,10 @@
                 },
                 "ops": {
                     "description": "Default ops profile",
+                    "type": "string"
+                },
+                "zftp": {
+                    "description": "Default zftp profile",
                     "type": "string"
                 },
                 "base": {

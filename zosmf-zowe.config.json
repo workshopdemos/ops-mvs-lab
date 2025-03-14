@@ -1,0 +1,55 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "zosmf": {
+            "type": "zosmf",
+            "properties": {
+                "port": 1443
+            }
+        },
+        "tso": {
+            "type": "tso",
+            "properties": {
+                "account": "",
+                "codePage": "1047",
+                "logonProcedure": "IZUFPROC"
+            }
+        },
+        "ssh": {
+            "type": "ssh",
+            "properties": {
+                "port": 22
+            }
+        },
+        "base": {
+            "type": "base",
+            "properties": {
+                "host": "10.252.118.132",
+                  // "host": "r22p.msd.labs.broadcom.net",
+                "reject-unauthorized": false,
+                "user": "PROD006",
+                "password": "opslab1"
+            }
+            // }, 
+            // "secure": ["user", "password"]
+        },
+        "opsrest": {
+            "type": "ops",
+            "properties": {
+                "port": 50080,
+                "rest-api": true,
+                "reject-unauthorized": false,
+                "subsystem": "OPSS",
+                "protocol": "https"
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "zosmf",
+        "tso": "tso",
+        "ssh": "ssh",
+        "ops": "opsrest",
+        "base": "base"
+    },
+    "autoStore": true
+}

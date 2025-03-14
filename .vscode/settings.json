@@ -1,4 +1,5 @@
 {
     "zowe.security.secureCredentialsEnabled": false,
-    "zowe.automaticProfileValidation": false
+    "zowe.automaticProfileValidation": false,
+    "zowe-native-proto-vsce.logLevel": "TRACE"
 }
