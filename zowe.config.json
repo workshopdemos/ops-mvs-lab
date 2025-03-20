@@ -35,17 +35,10 @@
             "type": "base",
             "properties": {
                 "host": "10.252.118.132",
-                  // "host": "r22p.msd.labs.broadcom.net",
                 "reject-unauthorized": false,
-                // "user": "PROD001", "password": "opslab1"
-                // "user": "PROD007", "password": "007PROD"
-                "user": "USER30",
-                // "user": "USER02",
-                // "password": "opsuser"
-                "password": "USER30"
+                "user": "USER04",
+                "password": "******"
             }
-            // }, 
-            // "secure": ["user", "password"]
         },
         "opsrest": {
             "type": "ops",
