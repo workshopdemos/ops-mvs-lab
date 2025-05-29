@@ -26,17 +26,29 @@ If you run into any snags, simply raise your hand and a facilitator will come ov
 
 <img src='./images/zowe-explorer.PNG' width='40%'>
 
-2. Hover over the “zftp” item in the DATA SET section of the sidebar and click on the magnifier icon. 
+2. Hover over the “zftp” item in the DATA SET section of the sidebar and click on the magnifier icon. (NOTE: if the “zftp” item is not present, follow step 2a below) 
 
 <img src='./images/zftp.PNG' width='40%'>
 
+2a.1 Click on the plus icon (+) to the right of the DATA SETS section.
+
+<img src='./images/2a__add_profile_option.PNG' width='40%'>
+
+2a.2 Select the `zftp` profile from the drop down menu.
+
+<img src='./images/2a_select_zftp.PNG' width='40%'>
+
+2a.3 Select “Apply to all trees”.
+
+<img src='./images/2a_apply_to_all_trees.PNG' width='40%'>
+
 3. Enter `OPSMVS.LAB.*` in the search field and hit enter.
 
-<img src='./images/first-search.PNG' width='40%'>
+<img src='./images/3_search_bar.PNG' width='40%'>
 
 4. Hover over the `OPSMVS.LAB.*` data set and select the star icon to add it to your favorites.
 
-<img src='./images/add-to-favorites.PNG' width='40%'>
+<img src='./images/3_favorites.PNG' width='40%'>
 
 5. Repeat steps 2-4 for a data set called `CA1.OPSMVS.LAB.RULES`.
 
